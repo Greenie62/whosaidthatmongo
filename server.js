@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
-mongoose.connect(process.env.MONGODDB_URI || "mongodb://justin:vincen72181@ds223653.mlab.com:23653/whosaidthatdb"
+mongoose.connect(process.env.MONGODDB_URI || "mongodb://justin:vincen72181@ds223653.mlab.com:23653/whosaidthatdb");
 // Define API routes here
 app.use(routes)
 // Send every other request to the React app
