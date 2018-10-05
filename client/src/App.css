@@ -1,0 +1,210 @@
+/* Login Page Who Said That sliding DIVS */
+
+.who{
+    
+    display:inline; 
+
+    position:relative;
+    animation-name:who;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes who{
+    0%{top:40px;left:-600px; display:inline;}
+    100%{top:40px;left:35px; display:inline;}
+}
+.said{
+    display:inline;
+    position:relative;
+    animation-name:said;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes said{
+    0%{top:-300px;left:105px; display:inline;}
+    100%{top:40px;left:45px; display:inline;}
+}
+.that{
+    display:inline;
+    position:relative;
+    animation-name:that;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes that{
+    0%{top:40px;left:720px; display:inline;}
+    100%{top:40px;left:50px; display:inline;}
+}
+/*login header bg color */
+
+header{
+     background-color:green; 
+}
+
+/* login panel slides up from bottom */
+
+section{
+    height:200px;
+    width:50%;
+    background-color:lemonchiffon;
+    color:teal;
+    border-radius:25%;
+    border:2px solid teal;
+    margin:0 auto;
+    position:relative;
+    opacity:0;
+    text-align:center;
+    animation-name:section;
+    animation-duration:2s;
+   
+    animation-fill-mode:forwards;
+}
+
+@keyframes section{
+    0%{top:1300px;opacity:1}
+    100%{top:50px;opacity:1}
+}
+
+/*backdrop DIV for WHO SAID THAT heaer text(Login.js) */
+
+.headerbanner{background-color:purple;
+              width:45%;
+              position:relative;
+              border:2px solid white;
+              border-radius:25%;
+              height:200px;
+              z-index:0px;
+              left:300px;}
+
+ body{background-color:#888;} 
+ 
+
+ /*sliding name/password input boxes on Login.js */
+.password{
+    animation-name:password;
+    position:relative;
+    animation-fill-mode:forwards;
+    animation-delay:1s;
+    animation-duration:2s;
+}
+
+@keyframes password{
+    0%{left:-300px}
+    100%{left:0px}
+}
+
+.username{
+    animation-name:username;
+    position:relative;
+    animation-fill-mode:forwards;
+    animation-delay:1s;
+    animation-duration:2s;
+}
+
+@keyframes username{
+    0%{left:1200px}
+    100%{left:0px}
+}
+
+/* Footer CSS */
+footer{
+    background-color:green;
+    color:purple;
+    position:relative;
+    top:100px;
+}
+
+/*Home.JS all quotes slide in from left */
+
+.listedQuotes{
+    position:relative;
+    animation-name:listquotes;
+    animation-duration:2s;
+    animation-fill-mode:forwards
+}
+
+@keyframes listquotes{
+    0%{left:-300px}
+    100%{left:0px;}
+}
+
+.model{background-color:#ebebeb;
+       border:2px 1px teal;
+       color:teal;
+       font-family:Arial, Helvetica, sans-serif;
+       width:50%;
+       display:none;
+       margin:0 auto;
+       text-align:center;}
+
+.closeIt{
+    float:right;
+}
+
+.closeIt:hover{
+    cursor:pointer;
+}
+
+.enterButton{
+    transition-property:transform;
+}
+
+.enterButton:hover{
+    transform:rotateY(180deg)
+}
+
+.haOne{
+    position:relative;
+    left:500px;
+    opacity:0;
+    animation-name:haOne;
+    animation-delay:1s;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+    
+}
+
+@keyframes haOne{
+   
+    0%{opacity:0}
+    100%{opacity:1}
+}
+.haTwo{
+    position:relative;
+    left:550px;
+    opacity:0;
+    animation-name:haTwo;
+    animation-delay:2s;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+
+}
+
+@keyframes haTwo{
+    0%{opacity:0;}
+  
+    100%{opacity:1}
+}
+.haThree{
+    position:relative;
+    left:600px;
+    opacity:0;
+    animation-name:haThree;
+    animation-delay:3s;
+    animation-duration:2s;
+    animation-fill-mode:forwards;
+   
+}
+
+@keyframes haThree{
+    0%{opacity:0;}
+  
+    100%{opacity:1;}
+}
+
